@@ -72,7 +72,6 @@ class WebdriverUtils
 
     static public function takeScreenshotAndSaveTofile(RemoteWebDriver $driver, $filenameFullpath)
     {
-        // e.g $filenameFullpath "D:\\projects\\2018_02_php_fb_scraper\\_repo\\php-selenium\\facebookscraper\\image.png"
         $driver->takeScreenshot($filenameFullpath);
 
     }
