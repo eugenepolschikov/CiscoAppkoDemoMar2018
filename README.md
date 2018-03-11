@@ -1,7 +1,3 @@
-# php: facebook robot for likes calculation in the posts and extracting people profile who liked the post.
-This example is developed using php client for webdriver: https://github.com/facebook/php-webdriver . 
-Composer is used as dependency manager in this example. 
-
 ### Pre-requisites. 
 
 ========= Begin.
@@ -18,6 +14,12 @@ Composer is used as dependency manager in this example.
 in the browser URL:  http://take.ms/5WCet8  
 
 ========== End
+
+
+# php: facebook robot for likes calculation in the posts and extracting people profile who liked the post.
+This example is developed using php client for webdriver: https://github.com/facebook/php-webdriver . 
+Composer is used as dependency manager in this example. 
+
 
 ### Execution
 
