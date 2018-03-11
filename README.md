@@ -17,7 +17,8 @@ in the browser URL:  http://take.ms/5WCet8
 
 
 # php: selenium webdriver facebook robot. It does the following actions: navigates to post,
-extracts likes(reactions) number for particular post and extracts people list who liked this post. And prints results in console.
+# extracts likes(reactions) number for particular post and extracts people list who liked this post. And prints results in console.
+
 This example is implemented using php client for webdriver: https://github.com/facebook/php-webdriver . 
 Composer is used as dependency manager in this example. 
 
