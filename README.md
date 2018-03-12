@@ -24,10 +24,20 @@ Composer is used as dependency manager in this example.
 
 ### Execution
 
-4)  open 'php-selenium\facebookscraper'  , folder , run    'php runner.php' => http://take.ms/pyfCD 
+1)  open 'CiscoAppkoDemoMar2018\webdriverPhp'  folder , run    'php runner.php' => http://take.ms/pyfCD 
 
 
 =========================================================================
 
 
-# java: 
+# java: selenium webdriver login test. It does the following actions: it opens facebook login page. Checks that login input, password input and sign-in buttons are present on the page.
+
+This example is implemented using java based project using: maven as dependency manager for the project, testNG- as test runner, 
+allure- for test reporting. 
+
+### Execution: 
+
+1) open 'CiscoAppkoDemoMar2018\selenium_UI' folder,  open console window (Win+R -> cmd) in this folder  ,
+execute the following command :   'mvn clean test -D "testng.suite.name=FunctionalUiDebug"  -P prod,masterusersprod,hubipseleniumtests'   , http://take.ms/IFl28
+2) after the execution open 'selenium_UI\target' folder , and execute the following command:  'allure serve'  , http://take.ms/v8wEi  
+
