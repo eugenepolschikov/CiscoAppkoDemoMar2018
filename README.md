@@ -24,7 +24,7 @@ Composer is used as dependency manager in this example.
 
 ### Execution
 
-1)  open 'CiscoAppkoDemoMar2018\webdriverPhp'  folder , run    'php runner.php' => http://take.ms/pyfCD 
+1)  open 'CiscoAppkoDemoMar2018\webdriverPhp'  folder , run    'php runner.php' => http://take.ms/DuIwK 
 
 
 =========================================================================
@@ -38,6 +38,6 @@ allure- for test reporting.
 ### Execution: 
 
 1) open 'CiscoAppkoDemoMar2018\selenium_UI' folder,  open console window (Win+R -> cmd) in this folder  ,
-execute the following command :   'mvn clean test -D "testng.suite.name=FunctionalUiDebug"  -P prod,masterusersprod,hubipseleniumtests'   , http://take.ms/IFl28
+execute the following command :   'mvn clean test -D "testng.suite.name=FunctionalUiDebug"  -P prod,masterusersprod,hubipseleniumtests'   ,http://take.ms/eba8U ,  http://take.ms/IFl28
 2) after the execution open 'selenium_UI\target' folder , and execute the following command:  'allure serve'  , http://take.ms/v8wEi  
 
