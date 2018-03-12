@@ -45,49 +45,11 @@ public class FacebookTest extends TestSuitesBase implements Screen {
     @Stories("Login to facebook, navigate to the psot, and extract reactions number")
     @Test(groups = {"functional", "E2E", "regresion", "smoke"})
     public void facebookEndToEndTest() throws Exception {
+        SoftAssert softAssertion = new SoftAssert();
 
         BaseUser fbMasterUser = new BaseUser(configs.getFacebookLogin(), configs.getFacebookPassword());
-
-        SoftAssert softAssertion = new SoftAssert();
         log.info("facebook landing page and login");
-
-
         new FbLoginPage(driver).facebookLogin(fbMasterUser);
-//                            .registerToday()
-//                            .hsbcRegisterUser()
-//                            .fillInHsbcRegistrationForm(stubForNewUser,
-//                                    configs.getEnvironmentTagForNewTestUser());
-
-//            log.info("HSBC sign-up: registered new user: " + justRegisteredUser.toString());
-//            dumpUserToCsv(justRegisteredUser, "HsbcTestUsersDev.csv");
-/*
-            sleepUninterruptibly(5000, TimeUnit.MILLISECONDS);
-            driver.get(parseConfirmationUrl(emailBox));
-            waitForPageLoaded(driver);
-            //wait till CONFIRMATION link popup completely loaded
-            sleepUninterruptibly(10000, TimeUnit.MILLISECONDS);
-            justRegisteredUser.setStatus(SignUpUserStatuses.REGISTERED_ENTERED_CONFIRMATION_LINK.getSignUpStatus());
-            driver = driverRestart(driver, baseUrl);
-
-            log.info("HSBC sign-up: login into application for the first time to finish sign-up and enter" +
-                    "user details");
-
-            new HbscLandingPage(driver)
-                    .signIn()
-                    .doFirstLoginAfterRegistration(justRegisteredUser)
-                    .connectToLinkedInClick()
-                    .linkedinAuthOnHsbcFirstLogin(linkedin, emailBox)
-                    .fillUserProfileDetails(justRegisteredUser)
-                    .fillOccupationCompanyPosition(softAssertion)
-                    .fillEmailToConfirm()
-                    .rateSignupAndSubmit()
-                    .waitHsbcOnCompleteMessage();
-            justRegisteredUser
-                    .setStatus(SignUpUserStatuses.REGISTERED_CONFIRMED_EMAIL_ENTERED_USERDETAILS.getSignUpStatus());
-            log.info("HSBC sign-up: filled in USER details; sign-up COMPLETED for the user " +
-                    justRegisteredUser.toString());
-            dumpUserToCsv(justRegisteredUser, "HsbcTestUsersDev.csv");
-*/
 
         //finalizing soft assertion
         softAssertion.assertAll();
